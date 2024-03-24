@@ -1,5 +1,5 @@
 terraform {
-  source = "github.com/sudheerduba/aws-vpc-network-terraform.git//modules?ref=v1.2.0"
+  source = "github.com/andreiciorba/terraform-multi-env-training.git//modules"
 }
 
 include "remote_state" {
@@ -7,7 +7,7 @@ include "remote_state" {
 }
 
 locals {
-  region = "eu-west-3"
+  region = "us-east-1"
 }
 
 inputs = {
